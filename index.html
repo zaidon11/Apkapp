@@ -2,19 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إدارة مركز الراشد</title>
     
-    <link rel="icon" type="image/png" href="https://image2url.com/r2/default/images/1770819707908-9d1493d6-222f-4a2c-a3bb-db934121cb1e.png?v=2">
-    <link rel="apple-touch-icon" href="https://image2url.com/r2/default/images/1770819707908-9d1493d6-222f-4a2c-a3bb-db934121cb1e.png?v=2">
+    <link rel="icon" type="image/png" href="https://image2url.com/r2/default/images/1770819707908-9d1493d6-222f-4a2c-a3bb-db934121cb1e.png">
+    <link rel="apple-touch-icon" href="https://image2url.com/r2/default/images/1770819707908-9d1493d6-222f-4a2c-a3bb-db934121cb1e.png">
     
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#1c4587">
-
-    <link rel="manifest" href='data:application/manifest+json,{"name":"نظام مركز الراشد","short_name":"الراشد V2","start_url":"index.html","display":"standalone","background_color":"#f4f7f9","theme_color":"#1c4587","icons":[{"src":"https://image2url.com/r2/default/images/1770819707908-9d1493d6-222f-4a2c-a3bb-db934121cb1e.png","sizes":"512x512","type":"image/png"}]}'>
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -27,7 +24,6 @@
             height: 100vh;
             margin: 0;
             overflow: hidden;
-            -webkit-tap-highlight-color: transparent;
         }
         .header { text-align: center; margin-bottom: 30px; }
         .header img { 
@@ -87,14 +83,5 @@
 
     <div class="footer">مركز الراشد للاتصالات © 2026</div>
 
-    <script>
-        // سكريبت "إجباري" لتسجيل التطبيق في ذاكرة الهاتف
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                const b = new Blob(["self.addEventListener('fetch', (e) => { e.respondWith(fetch(e.request)); });"], {type: 'text/javascript'});
-                navigator.serviceWorker.register(URL.createObjectURL(b)).then(reg => console.log('App Ready'));
-            });
-        }
-    </script>
 </body>
 </html>
